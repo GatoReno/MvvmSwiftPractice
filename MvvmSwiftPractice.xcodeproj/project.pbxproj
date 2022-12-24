@@ -14,6 +14,9 @@
 		87886F9829576925007AD81E /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87886F9729576925007AD81E /* MainViewModel.swift */; };
 		87886F9B29576A79007AD81E /* SACourses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87886F9A29576A79007AD81E /* SACourses.swift */; };
 		87886F9D295777DC007AD81E /* SAURLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87886F9C295777DC007AD81E /* SAURLImage.swift */; };
+		87886FA129578008007AD81E /* PokemonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87886FA029578008007AD81E /* PokemonModel.swift */; };
+		87886FA3295780C2007AD81E /* PokemonAPIResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87886FA2295780C2007AD81E /* PokemonAPIResponseModel.swift */; };
+		87886FA529578128007AD81E /* PokemonApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87886FA429578128007AD81E /* PokemonApiService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		87886F9729576925007AD81E /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		87886F9A29576A79007AD81E /* SACourses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SACourses.swift; sourceTree = "<group>"; };
 		87886F9C295777DC007AD81E /* SAURLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAURLImage.swift; sourceTree = "<group>"; };
+		87886FA029578008007AD81E /* PokemonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonModel.swift; sourceTree = "<group>"; };
+		87886FA2295780C2007AD81E /* PokemonAPIResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonAPIResponseModel.swift; sourceTree = "<group>"; };
+		87886FA429578128007AD81E /* PokemonApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonApiService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,7 @@
 		87886F8729575C59007AD81E /* MvvmSwiftPractice */ = {
 			isa = PBXGroup;
 			children = (
+				87886F9E29577F4F007AD81E /* Abstractions */,
 				87886F9929576A56007AD81E /* Models */,
 				87886F9629576909007AD81E /* ViewModels */,
 				87886F8829575C59007AD81E /* MvvmSwiftPracticeApp.swift */,
@@ -79,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				87886F9729576925007AD81E /* MainViewModel.swift */,
+				87886FA429578128007AD81E /* PokemonApiService.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -86,10 +94,27 @@
 		87886F9929576A56007AD81E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				87886F9F29577F81007AD81E /* PokemonModels */,
 				87886F9A29576A79007AD81E /* SACourses.swift */,
 				87886F9C295777DC007AD81E /* SAURLImage.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		87886F9E29577F4F007AD81E /* Abstractions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Abstractions;
+			sourceTree = "<group>";
+		};
+		87886F9F29577F81007AD81E /* PokemonModels */ = {
+			isa = PBXGroup;
+			children = (
+				87886FA029578008007AD81E /* PokemonModel.swift */,
+				87886FA2295780C2007AD81E /* PokemonAPIResponseModel.swift */,
+			);
+			path = PokemonModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,9 +188,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				87886F8B29575C59007AD81E /* ContentView.swift in Sources */,
+				87886FA129578008007AD81E /* PokemonModel.swift in Sources */,
 				87886F8929575C59007AD81E /* MvvmSwiftPracticeApp.swift in Sources */,
+				87886FA3295780C2007AD81E /* PokemonAPIResponseModel.swift in Sources */,
 				87886F9D295777DC007AD81E /* SAURLImage.swift in Sources */,
 				87886F9B29576A79007AD81E /* SACourses.swift in Sources */,
+				87886FA529578128007AD81E /* PokemonApiService.swift in Sources */,
 				87886F9829576925007AD81E /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
